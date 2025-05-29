@@ -25,5 +25,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.universal8895.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.universal8895.rc \
     $(LOCAL_PATH)/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Python prebuilts
 TW_EXCLUDE_PYTHON := true
