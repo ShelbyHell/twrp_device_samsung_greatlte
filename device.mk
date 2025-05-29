@@ -21,5 +21,9 @@ TW_EXCLUDE_LPDUMP := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/init.recovery.universal8895.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.universal8895.rc \
+    $(LOCAL_PATH)/recovery/root/init.recovery.usb.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.usb.rc
+
 # Python prebuilts
 TW_EXCLUDE_PYTHON := true
