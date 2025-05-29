@@ -17,5 +17,9 @@
 # Lpdump
 TW_EXCLUDE_LPDUMP := true
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
+
 # Python prebuilts
 TW_EXCLUDE_PYTHON := true
